@@ -30,15 +30,15 @@
 			}
 			
 			function disconnect(){
-                if (conn.peer) {
-                    conn.peer = null;
-                    conn.close();
-				    alert('You are no longer connected to the server!');
-				    $('#rid').val("");
-				    $('#rid').prop('disabled', false);
-				    $('#progBar').width('0%');
-				    $('#inputText').val("");
-                }
+				if (conn.peer) {
+					conn.peer = null;
+					conn.close();
+					alert('You are no longer connected to the server!');
+					$('#rid').val("");
+					$('#rid').prop('disabled', false);
+					$('#progBar').width('0%');
+					$('#inputText').val("");
+				}
 			}
 			
 			$().ready(function(){
